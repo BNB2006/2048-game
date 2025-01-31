@@ -28,4 +28,4 @@ Move tiles with arrow keys, **merge numbers**, and reach **2048** to win!
 ## 🔧 Installation & Usage
 1. **Clone or Download** this repository:
    ```sh
-   git clone https://github.com/yourusername/2048-game.git
+   git clone https://github.com/BNB2006/2048-game.git
