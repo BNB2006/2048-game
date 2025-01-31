@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  justify-items: stretch;
+  position: absolute;
+  top: 0px;
+  height: 40px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  font-family: Pixelify Sans;
+  font-weight: bold;
+  font-size: large;
+  background-color: #0f1111;
+  width: 100vw;
+  height: 50px;
+  
+}
+a{
+  margin-left: 50px;
+  margin-right: 160px;
+  color: aqua;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+#logo{
+  font-size: 25px;
+  color: red;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(88, 188, 188);
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.game {
+  margin-bottom: 10px;
+  font-family: Pixelify Sans;
+  color:red;
+  transform: scale(3.1);
+  text-shadow: 0 1px 20px rgb(208, 202, 47);
+}
+
+.score-board {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: aqua;
+  text-shadow: 0 5px 30px rgb(255, 0, 0);
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px rgb(124, 213, 213);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  visibility: hidden;
+}
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.2s;
+  color: white;
+  cursor: pointer;
+}
+.tile:hover {
+  background-color: rgba(233, 7, 7, 0.2);
+}
+#startBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #444;
+  border: none;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
+  box-shadow: 0 5px 30px rgb(255, 0, 0);
+}
+#startBtn:hover {
+  background-color: rgb(124, 213, 213);
+  color: #fff;
+  box-shadow: 0 4px 8px rgb(124, 213, 213);
+}
+
+.control{
+  color: aqua;
+  font-size: larger;
+  font-family: Pixelify Sans;
+  text-shadow: 0 5px 30px rgb(124, 213, 213);
+  transform: scale(1.1);
+  box-shadow: 0 1px 10px rgb(124, 213, 213);
+}
+
+footer{
+  background-color: #0f1111;
+  text-align: center;
+  color: rgb(199, 57, 57);
+  height: 60px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+}
